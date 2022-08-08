@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
    
   constructor(private router:Router){}
-  title = 'my-per';
+  title = 'studentDetails';
   studentDetails:any=[
     {id:1,name:"riaz",hindi:78,english:90,maths:91,mm:45,physics:54,social:82},
     {id:2,name:"abdul",hindi:65,english:87,maths:71,mm:87,physics:32,social:72},
