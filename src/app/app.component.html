@@ -1,51 +1,11 @@
-Welcome , {{title}} Angular projects
-<table border=1>
-<tr>
-  <td>ID</td>
-  <td>Name</td>
-  <td>hindi</td>
-  <td>engilsh</td>
-  <td>Maths</td>
-  <td>MM</td>
-  <td>physics</td>
-  <td>Social</td>
-  <td>Pass_Fail</td>
-  <td>StudentGrade</td>
-  <td>Percentage</td>
-  <td>Total</td>
-  <td>address</td>
-  <td>DOB</td>
-  <td>phone</td>
-  <td>city</td>
+Welcome , {{title}} 
 
-  
-</tr>
-<tr *ngFor="let stu of studentDetails1">
-  <td>{{stu.id}}</td>
-  <td>{{stu.name}}</td>
-  <td>{{stu.hindi}}</td>
-  <td>{{stu.english}}</td>
-  <td>{{stu.maths}}</td>
-  <td>{{stu.mm}}</td>
-  <td>{{stu.physics}}</td>
-  <td>{{stu.social}}</td>
-  <td>{{stu.pass_fail}}</td>
-  <td>{{stu.studentgrade}}</td>
-  <td>{{stu.per}}</td>
-  <td>{{stu.total}}</td>
-  <td>{{stu.address}}</td>
-  <td>{{stu.dob}}</td>
-  <td>{{stu.phone}}</td>
-  <td>{{stu.city}}</td>
-
- 
-  
-</tr>
-</table>
-<section>
-    <div> 
-  
-      <button type="button" (click)="gotostudents()">studentDetails</button><br>
-      
-   </div>
-</section>
+<div>
+  <a href="/app.component.ts">app.component.ts</a>&nbsp;&nbsp;&nbsp;
+  <a href="/mytable1">table1</a>&nbsp;&nbsp;&nbsp;
+  <a href="/login">login</a>&nbsp;&nbsp;&nbsp;
+  <a href="/register">register</a>&nbsp;&nbsp;&nbsp;
+  <a href="/Parent">Parent</a>&nbsp;&nbsp;&nbsp;
+  <a href="/Child">Child</a>&nbsp;&nbsp;&nbsp;
+</div>
+<router-outlet></router-outlet>
