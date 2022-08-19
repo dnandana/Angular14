@@ -1,5 +1,5 @@
 import { TemplateBindingParseResult } from '@angular/compiler';
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,8 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   
+  
   constructor(private router:Router){}
+  menus:any={
+    'header-menu':[
+      {link:"/",name:"Home"},
+      {link:"/login",name:"login"},
+      {link:"/dashboard",name:"Dashboard"},
+      {link:"/students",name:"students"},
+      
+    ],
+    "left-menu":{},
+    "right-menu":{},
+    "footer-menu":{},
+    "body-content":{}
+  }
   title = 'studentDetails';
   studentDetails:any=[
     {id:1,name:"riaz",hindi:78,english:90,maths:91,mm:45,physics:54,social:82},
@@ -46,6 +59,7 @@ export class AppComponent {
   ngOnInit(){
     this.testResult();
   }
+ 
      studentDetails1:any =[];
       total_pass:number=0;
       testResult(){
@@ -84,4 +98,3 @@ export class AppComponent {
 
 
 };
-

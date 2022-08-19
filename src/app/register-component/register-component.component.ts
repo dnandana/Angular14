@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder,FormControl,FormGroup,Validators } from '@angular/forms';
 import { ConfirmPasswordValidator} from '../confirm-password.validator';
+import { RegisterServicesService } from '../register-services.service';
+
 @Component({
   selector: 'app-register-component',
   templateUrl: './register-component.component.html',
@@ -16,7 +18,7 @@ export class RegisterComponentComponent implements OnInit {
     constructor(
       private formBuilder: FormBuilder,
       private router:Router,  
-     
+      private registerServicesService : RegisterServicesService
       
     ) { }
   

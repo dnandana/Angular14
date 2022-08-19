@@ -1,11 +1,19 @@
-Welcome , {{title}} 
+<!-- Welcome , {{title}}  -->
 
 <div>
-  <a href="/app.component.ts">app.component.ts</a>&nbsp;&nbsp;&nbsp;
-  <a href="/mytable1">table1</a>&nbsp;&nbsp;&nbsp;
-  <a href="/login">login</a>&nbsp;&nbsp;&nbsp;
-  <a href="/register">register</a>&nbsp;&nbsp;&nbsp;
-  <a href="/Parent">Parent</a>&nbsp;&nbsp;&nbsp;
-  <a href="/Child">Child</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/app.component.ts">app.component.ts</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/mytable1">table1</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/login">login</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/register">register</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Parent">Parent</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Child">Child</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/header">header</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/footer">footer</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Lmenu">Lmenu</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Rmenu">Rmenu</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/registerServices">registerServices</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/employeesList">employeesList</a>&nbsp;&nbsp;&nbsp;
 </div>
+<app-header [menus]="menus"></app-header>
+
 <router-outlet></router-outlet>

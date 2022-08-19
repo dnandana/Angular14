@@ -8,6 +8,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponentComponent } from './register-component/register-component.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { LmenuComponent } from './lmenu/lmenu.component';
+import { RmenuComponent } from './rmenu/rmenu.component';
+import { EmployeesListComponent } from './employees-list/employees-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { ChildComponent } from './child/child.component';
     LoginComponent,
     RegisterComponentComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    HeaderComponent,
+    FooterComponent,
+    LmenuComponent,
+    RmenuComponent,
+    EmployeesListComponent,
   ],
   imports: [
     BrowserModule,
