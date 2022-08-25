@@ -1,52 +1,19 @@
-Welcome , {{title}}
-<table border=1>
-<tr>
-  <td>ID</td>
-  <td>Name</td>
-  <td>hindi</td>
-  <td>engilsh</td>
-  <td>Maths</td>
-  <td>MM</td>
-  <td>physics</td>
-  <td>Social</td>
-  <td>Pass_Fail</td>
-  <td>StudentGrade</td>
-  <td>Percentage</td>
-  <td>Total</td>
-  <td>address</td>
-  <td>DOB</td>
-  <td>phone</td>
-  <td>city</td>
+<!-- Welcome , {{title}}  -->
 
-  
-</tr>
-<tr *ngFor="let stu of studentDetails1">
-  <td>{{stu.id}}</td>
-  <td>{{stu.name}}</td>
-  <td>{{stu.hindi}}</td>
-  <td>{{stu.english}}</td>
-  <td>{{stu.maths}}</td>
-  <td>{{stu.mm}}</td>
-  <td>{{stu.physics}}</td>
-  <td>{{stu.social}}</td>
-  <td>{{stu.pass_fail}}</td>
-  <td>{{stu.studentgrade}}</td>
-  <td>{{stu.per}}</td>
-  <td>{{stu.total}}</td>
-  <td>{{stu.address}}</td>
-  <td>{{stu.dob}}</td>
-  <td>{{stu.phone}}</td>
-  <td>{{stu.city}}</td>
+<div>
+  <a routerLink="/app.component.ts">app.component.ts</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/mytable1">table1</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/login">login</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/register">register</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Parent">Parent</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Child">Child</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/header">header</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/footer">footer</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Lmenu">Lmenu</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/Rmenu">Rmenu</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/registerServices">registerServices</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/employeesList">employeesList</a>&nbsp;&nbsp;&nbsp;
+</div>
+<app-header [menus]="menus"></app-header>
 
- 
-  
-</tr>
-</table>
-<section>
-    <div> 
-  
-      <button type="button" (click)="gotostudents()">Login</button><br>
-      
-   </div>
-</section>
 <router-outlet></router-outlet>

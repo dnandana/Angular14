@@ -1,0 +1,14 @@
+<p>child works!</p>
+<table>
+    <tr>
+        <td>id</td>
+        <td>Name</td>
+        <td>ExamResult</td>
+        <td>pass/fail</td>
+    </tr>
+    <tr *ngFor="let ex of ExamResults">
+        <td *ngIf="ex.ExamResult>=90">pass</td>
+        <td *ngIf="ex.ExamResult<90">Fail</td>
+        
+    </tr>
+</table>
